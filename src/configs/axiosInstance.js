@@ -1,8 +1,8 @@
 import axios from 'axios';
-
 const axiosInstance = axios.create({
   baseURL: 'http://api.currencylayer.com',
   timeout: 5000,
+  maxRedirects: 0,
   headers: {
     'Content-Type': 'application/json',
   },
